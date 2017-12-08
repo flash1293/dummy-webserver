@@ -6,5 +6,5 @@ services:
 install: docker build -t dummy-webserver .
 script:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker tag dummery-webserver $DOCKER_USERNAME/dummy-webserver
+  - docker tag dummy-webserver $DOCKER_USERNAME/dummy-webserver
   - docker push $DOCKER_USERNAME/dummy-webserver
